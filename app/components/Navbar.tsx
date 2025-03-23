@@ -61,10 +61,8 @@ export const Navbar = () => {
     <header className="sticky top-0 z-40 w-full border-b bg-white">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
-          <Link href="/">
-            <Button variant="ghost" className="font-bold text-xl">
-              NPI<span className="text-blue-600">RA</span>
-            </Button>
+          <Link href="/" className="font-bold text-xl">
+              NPI<span className=" text-blue-600">RA</span>
           </Link>
         </div>
 
