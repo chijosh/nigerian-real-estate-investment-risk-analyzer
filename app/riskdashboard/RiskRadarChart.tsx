@@ -8,6 +8,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  TooltipItem,
 } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
@@ -46,7 +47,7 @@ export const RiskRadarChart: React.FC<RiskRadarChartProps> = ({ regionData }) =>
     plugins: {
       tooltip: {
         callbacks: {
-          label: (tooltipItem: any) => `Risk Score: ${tooltipItem.raw}`,
+          label: (tooltipItem: TooltipItem<'bar'>) => `Risk Score: ${tooltipItem.raw}`,
         },
       },
       legend: {
