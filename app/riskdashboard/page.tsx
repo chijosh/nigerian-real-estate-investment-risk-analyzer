@@ -11,19 +11,19 @@ import { RiskRadarChart } from './RiskRadarChart';
 import regionsData from '../components/data/regions.json';
 import riskData from '../components/data/risks.json';
 
-interface RiskDashboardProps {
-  onShowInfo: () => void;
-}
 
-const RiskDashboard: React.FC<RiskDashboardProps> = ({
-  onShowInfo
-}) => {
+const RiskDashboard = () => {
   const [selectedRegion, setSelectedRegion] = useState<string>('lagos');
+  const [, setShowPropertyInfo] = useState(false);
   const [selectedRiskCategory, setSelectedRiskCategory] = useState('legal');
 
 
   const handleRegionChange = (region: string) => {
     setSelectedRegion(region);
+  };
+
+  const handleShowPropertyInfo = () => {
+    setShowPropertyInfo(true);
   };
 
   const regions = regionsData.regions;
@@ -36,9 +36,6 @@ const RiskDashboard: React.FC<RiskDashboardProps> = ({
     { id: 'logistical', label: 'Logistical Risks', icon: <AlertTriangle className="h-5 w-5 mr-2" /> },
     { id: 'market', label: 'Market & Political Risks', icon: <AlertTriangle className="h-5 w-5 mr-2" /> }
   ];
-
-  console.log({currentRegion});
-  
 
   const currentRisks = risks.filter(risk => risk.category === selectedRiskCategory);
   const regionRiskData = currentRegion.riskScores;
@@ -65,7 +62,7 @@ const RiskDashboard: React.FC<RiskDashboardProps> = ({
               ))}
             </SelectContent>
           </Select>
-          <Button variant="outline" size="icon" onClick={onShowInfo}>
+          <Button variant="outline" size="icon" onClick={handleShowPropertyInfo}>
             <Info className="h-4 w-4" />
           </Button>
         </div>
