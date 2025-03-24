@@ -5,7 +5,7 @@ import { ChevronRight, Shield, FileText, BarChart3, Map } from "lucide-react";
 
 export const HomePage = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="hero flex flex-col w-full">
       {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto px-4 md:px-6">
@@ -18,7 +18,7 @@ export const HomePage = () => {
               diasporans looking to invest in homeland property.
             </p>
             <div className="space-x-4">
-              <Link href="/login">
+              <Link href="/riskdashboard">
                 <Button variant="default" size="lg">
                   Explore Risk Dashboard
                   <ChevronRight className="ml-2 h-4 w-4" />

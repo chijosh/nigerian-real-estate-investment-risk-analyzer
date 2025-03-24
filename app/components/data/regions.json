@@ -1,0 +1,239 @@
+{
+  "regions": [
+    {
+      "id": "lagos",
+      "name": "Lagos",
+      "description": "Nigeria's commercial capital with the highest property values and fastest market growth.",
+      "overallRiskScore": 72,
+      "riskScores": [
+        { "name": "Legal Risk", "value": 78 },
+        { "name": "Financial Risk", "value": 75 },
+        { "name": "Logistical Risk", "value": 65 },
+        { "name": "Market Risk", "value": 70 },
+        { "name": "Security Risk", "value": 60 }
+      ],
+      "propertyTypes": [
+        {
+          "type": "Residential",
+          "priceRange": "₦25M - ₦500M",
+          "demandLevel": "Very High"
+        },
+        {
+          "type": "Commercial",
+          "priceRange": "₦50M - ₦2B",
+          "demandLevel": "High"
+        },
+        {
+          "type": "Land",
+          "priceRange": "₦5M - ₦200M per plot",
+          "demandLevel": "Very High"
+        }
+      ],
+      "keyAreas": [
+        {
+          "name": "Lekki",
+          "riskLevel": "Medium-High",
+          "notes": "Popular with diasporans but has experienced property bubbles"
+        },
+        {
+          "name": "Ikoyi",
+          "riskLevel": "Medium",
+          "notes": "More established area with higher entry costs but better security"
+        },
+        {
+          "name": "Mainland (Yaba, Surulere)",
+          "riskLevel": "Medium",
+          "notes": "More affordable with better rental yields"
+        }
+      ]
+    },
+    {
+      "id": "abuja",
+      "name": "Abuja",
+      "description": "Nigeria's capital with significant government presence and planned development.",
+      "overallRiskScore": 67,
+      "riskScores": [
+        { "name": "Legal Risk", "value": 65 },
+        { "name": "Financial Risk", "value": 68 },
+        { "name": "Logistical Risk", "value": 60 },
+        { "name": "Market Risk", "value": 75 },
+        { "name": "Security Risk", "value": 55 }
+      ],
+      "propertyTypes": [
+        {
+          "type": "Residential",
+          "priceRange": "₦20M - ₦400M",
+          "demandLevel": "High"
+        },
+        {
+          "type": "Commercial",
+          "priceRange": "₦40M - ₦1.5B",
+          "demandLevel": "Medium"
+        },
+        {
+          "type": "Land",
+          "priceRange": "₦5M - ₦150M per plot",
+          "demandLevel": "High"
+        }
+      ],
+      "keyAreas": [
+        {
+          "name": "Maitama",
+          "riskLevel": "Medium",
+          "notes": "Premium area with higher government oversight"
+        },
+        {
+          "name": "Asokoro",
+          "riskLevel": "Medium",
+          "notes": "Prestigious area with diplomatic presence"
+        },
+        {
+          "name": "Satellite Towns",
+          "riskLevel": "High",
+          "notes": "More affordable but greater title issues and infrastructure challenges"
+        }
+      ]
+    },
+    {
+      "id": "portHarcourt",
+      "name": "Port Harcourt",
+      "description": "Oil industry hub with industrial and residential opportunities.",
+      "overallRiskScore": 78,
+      "riskScores": [
+        { "name": "Legal Risk", "value": 75 },
+        { "name": "Financial Risk", "value": 70 },
+        { "name": "Logistical Risk", "value": 80 },
+        { "name": "Market Risk", "value": 72 },
+        { "name": "Security Risk", "value": 85 }
+      ],
+      "propertyTypes": [
+        {
+          "type": "Residential",
+          "priceRange": "₦15M - ₦200M",
+          "demandLevel": "Medium"
+        },
+        {
+          "type": "Commercial",
+          "priceRange": "₦30M - ₦500M",
+          "demandLevel": "Medium"
+        },
+        {
+          "type": "Land",
+          "priceRange": "₦3M - ₦80M per plot",
+          "demandLevel": "Medium"
+        }
+      ],
+      "keyAreas": [
+        {
+          "name": "GRA",
+          "riskLevel": "Medium",
+          "notes": "Established area with better infrastructure"
+        },
+        {
+          "name": "Trans Amadi",
+          "riskLevel": "Medium-High",
+          "notes": "Industrial area with commercial potential"
+        },
+        {
+          "name": "Eleme/Onne",
+          "riskLevel": "High",
+          "notes": "Proximity to oil facilities but higher security concerns"
+        }
+      ]
+    },
+    {
+      "id": "ibadan",
+      "name": "Ibadan",
+      "description": "Nigeria's largest city by land area with more affordable property options.",
+      "overallRiskScore": 63,
+      "riskScores": [
+        { "name": "Legal Risk", "value": 68 },
+        { "name": "Financial Risk", "value": 55 },
+        { "name": "Logistical Risk", "value": 72 },
+        { "name": "Market Risk", "value": 60 },
+        { "name": "Security Risk", "value": 58 }
+      ],
+      "propertyTypes": [
+        {
+          "type": "Residential",
+          "priceRange": "₦8M - ₦100M",
+          "demandLevel": "Medium"
+        },
+        {
+          "type": "Commercial",
+          "priceRange": "₦15M - ₦200M",
+          "demandLevel": "Medium-Low"
+        },
+        {
+          "type": "Land",
+          "priceRange": "₦1M - ₦30M per plot",
+          "demandLevel": "Medium-High"
+        }
+      ],
+      "keyAreas": [
+        {
+          "name": "Bodija",
+          "riskLevel": "Medium-Low",
+          "notes": "Established residential area with better amenities"
+        },
+        {
+          "name": "Jericho",
+          "riskLevel": "Low-Medium",
+          "notes": "Premium area with more stable property values"
+        },
+        {
+          "name": "New Expansion Areas",
+          "riskLevel": "Medium-High",
+          "notes": "Affordable but higher risk of title issues"
+        }
+      ]
+    },
+    {
+      "id": "kano",
+      "name": "Kano",
+      "description": "Northern Nigeria's commercial center with growing property market.",
+      "overallRiskScore": 82,
+      "riskScores": [
+        { "name": "Legal Risk", "value": 80 },
+        { "name": "Financial Risk", "value": 65 },
+        { "name": "Logistical Risk", "value": 85 },
+        { "name": "Market Risk", "value": 78 },
+        { "name": "Security Risk", "value": 88 }
+      ],
+      "propertyTypes": [
+        {
+          "type": "Residential",
+          "priceRange": "₦5M - ₦80M",
+          "demandLevel": "Medium"
+        },
+        {
+          "type": "Commercial",
+          "priceRange": "₦12M - ₦150M",
+          "demandLevel": "Medium"
+        },
+        {
+          "type": "Land",
+          "priceRange": "₦800K - ₦20M per plot",
+          "demandLevel": "Medium"
+        }
+      ],
+      "keyAreas": [
+        {
+          "name": "Nassarawa GRA",
+          "riskLevel": "Medium",
+          "notes": "Upscale area with better infrastructure"
+        },
+        {
+          "name": "Bompai",
+          "riskLevel": "Medium-High",
+          "notes": "Industrial area with commercial opportunities"
+        },
+        {
+          "name": "Outskirts",
+          "riskLevel": "High",
+          "notes": "Affordable but higher security concerns and title issues"
+        }
+      ]
+    }
+  ]
+}

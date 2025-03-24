@@ -1,0 +1,632 @@
+{
+    "regions": {
+      "lagos": {
+        "name": "Lagos",
+        "propertyTypes": [
+          {
+            "type": "Residential Apartment (3-bedroom)",
+            "basePrice": 40000000,
+            "priceRange": "₦35M - ₦60M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 7.5,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 5,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 3,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Security Infrastructure",
+                "fixedAmount": 2000000,
+                "description": "Security installations and initial setup"
+              },
+              {
+                "name": "Power Backup",
+                "fixedAmount": 1500000,
+                "description": "Generator and inverter systems"
+              },
+              {
+                "name": "Water Supply System",
+                "fixedAmount": 800000,
+                "description": "Borehole or water storage solutions"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 2,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 15,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "high",
+            "estimatedReturnRate": "12-18%",
+            "liquidityRating": "medium"
+          },
+          {
+            "type": "Detached House (5-bedroom)",
+            "basePrice": 120000000,
+            "priceRange": "₦100M - ₦180M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 7.5,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 5,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 3.5,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Security Infrastructure",
+                "fixedAmount": 3500000,
+                "description": "Security installations and initial setup"
+              },
+              {
+                "name": "Power Backup",
+                "fixedAmount": 2500000,
+                "description": "Generator and inverter systems"
+              },
+              {
+                "name": "Water Supply System",
+                "fixedAmount": 1200000,
+                "description": "Borehole or water storage solutions"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 2.5,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 20,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "high",
+            "estimatedReturnRate": "10-15%",
+            "liquidityRating": "low"
+          },
+          {
+            "type": "Commercial Property",
+            "basePrice": 200000000,
+            "priceRange": "₦150M - ₦300M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 8,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 6,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 4,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Security Infrastructure",
+                "fixedAmount": 5000000,
+                "description": "Security installations and initial setup"
+              },
+              {
+                "name": "Power Backup",
+                "fixedAmount": 4000000,
+                "description": "Generator and inverter systems"
+              },
+              {
+                "name": "Water Supply System",
+                "fixedAmount": 1500000,
+                "description": "Borehole or water storage solutions"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 3,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 25,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "medium",
+            "estimatedReturnRate": "15-20%",
+            "liquidityRating": "medium"
+          }
+        ]
+      },
+      "abuja": {
+        "name": "Abuja",
+        "propertyTypes": [
+          {
+            "type": "Residential Apartment (3-bedroom)",
+            "basePrice": 45000000,
+            "priceRange": "₦40M - ₦65M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 7,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 5.5,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 2,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Security Infrastructure",
+                "fixedAmount": 1800000,
+                "description": "Security installations and initial setup"
+              },
+              {
+                "name": "Power Backup",
+                "fixedAmount": 1400000,
+                "description": "Generator and inverter systems"
+              },
+              {
+                "name": "Water Supply System",
+                "fixedAmount": 750000,
+                "description": "Borehole or water storage solutions"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 1.5,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 15,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "medium",
+            "estimatedReturnRate": "10-15%",
+            "liquidityRating": "medium"
+          },
+          {
+            "type": "Detached House (5-bedroom)",
+            "basePrice": 150000000,
+            "priceRange": "₦130M - ₦200M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 7,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 5.5,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 2.5,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Security Infrastructure",
+                "fixedAmount": 3000000,
+                "description": "Security installations and initial setup"
+              },
+              {
+                "name": "Power Backup",
+                "fixedAmount": 2200000,
+                "description": "Generator and inverter systems"
+              },
+              {
+                "name": "Water Supply System",
+                "fixedAmount": 1000000,
+                "description": "Borehole or water storage solutions"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 2,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 18,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "high",
+            "estimatedReturnRate": "8-14%",
+            "liquidityRating": "low"
+          },
+          {
+            "type": "Land (1000sqm)",
+            "basePrice": 50000000,
+            "priceRange": "₦40M - ₦80M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 7,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 8,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 2,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Perimeter Fencing",
+                "fixedAmount": 3500000,
+                "description": "Securing the land with proper fencing"
+              },
+              {
+                "name": "Site Clearing",
+                "fixedAmount": 1000000,
+                "description": "Initial land preparation"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 2,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 15,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "very high",
+            "estimatedReturnRate": "15-25%",
+            "liquidityRating": "medium"
+          }
+        ]
+      },
+      "portHarcourt": {
+        "name": "Port Harcourt",
+        "propertyTypes": [
+          {
+            "type": "Residential Apartment (3-bedroom)",
+            "basePrice": 35000000,
+            "priceRange": "₦30M - ₦45M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 7,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 4.5,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 3.5,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Security Infrastructure",
+                "fixedAmount": 2200000,
+                "description": "Security installations and initial setup"
+              },
+              {
+                "name": "Power Backup",
+                "fixedAmount": 1800000,
+                "description": "Generator and inverter systems"
+              },
+              {
+                "name": "Water Supply System",
+                "fixedAmount": 900000,
+                "description": "Borehole or water storage solutions"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 4,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 20,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "high",
+            "estimatedReturnRate": "12-16%",
+            "liquidityRating": "low"
+          },
+          {
+            "type": "Detached House (5-bedroom)",
+            "basePrice": 85000000,
+            "priceRange": "₦70M - ₦120M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 7,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 4.5,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 4,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Security Infrastructure",
+                "fixedAmount": 3000000,
+                "description": "Security installations and initial setup"
+              },
+              {
+                "name": "Power Backup",
+                "fixedAmount": 2500000,
+                "description": "Generator and inverter systems"
+              },
+              {
+                "name": "Water Supply System",
+                "fixedAmount": 1300000,
+                "description": "Borehole or water storage solutions"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 4.5,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 25,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "very high",
+            "estimatedReturnRate": "10-15%",
+            "liquidityRating": "very low"
+          }
+        ]
+      },
+      "ibadan": {
+        "name": "Ibadan",
+        "propertyTypes": [
+          {
+            "type": "Residential Apartment (3-bedroom)",
+            "basePrice": 25000000,
+            "priceRange": "₦20M - ₦35M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 6.5,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 4,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 2.5,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Security Infrastructure",
+                "fixedAmount": 1500000,
+                "description": "Security installations and initial setup"
+              },
+              {
+                "name": "Power Backup",
+                "fixedAmount": 1200000,
+                "description": "Generator and inverter systems"
+              },
+              {
+                "name": "Water Supply System",
+                "fixedAmount": 700000,
+                "description": "Borehole or water storage solutions"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 2,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 15,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "medium",
+            "estimatedReturnRate": "8-12%",
+            "liquidityRating": "medium"
+          },
+          {
+            "type": "Land (1000sqm)",
+            "basePrice": 15000000,
+            "priceRange": "₦10M - ₦25M",
+            "additionalCosts": [
+              {
+                "name": "Legal Fees",
+                "percentage": 6.5,
+                "description": "Title verification, documentation, and registration costs"
+              },
+              {
+                "name": "Government Charges",
+                "percentage": 4,
+                "description": "Taxes, stamp duty, and registration fees"
+              },
+              {
+                "name": "Agency Fees",
+                "percentage": 5,
+                "description": "Real estate agent commission"
+              },
+              {
+                "name": "Development Levies",
+                "percentage": 2,
+                "description": "Community and local government development charges"
+              },
+              {
+                "name": "Perimeter Fencing",
+                "fixedAmount": 2500000,
+                "description": "Securing the land with proper fencing"
+              },
+              {
+                "name": "Site Clearing",
+                "fixedAmount": 800000,
+                "description": "Initial land preparation"
+              },
+              {
+                "name": "Settlement Payments",
+                "percentage": 3,
+                "description": "Informal payments to community stakeholders"
+              },
+              {
+                "name": "Contingency Fund",
+                "percentage": 15,
+                "description": "Recommended buffer for unforeseen expenses"
+              }
+            ],
+            "riskLevel": "high",
+            "estimatedReturnRate": "10-18%",
+            "liquidityRating": "low"
+          }
+        ]
+      }
+    },
+    "mitigationCosts": {
+      "legalSafeguards": [
+        {
+          "name": "Comprehensive Title Search",
+          "cost": 350000,
+          "description": "Thorough investigation of property history and ownership through multiple channels"
+        },
+        {
+          "name": "Independent Legal Representation",
+          "cost": 500000,
+          "description": "Specialized property lawyer with local expertise"
+        },
+        {
+          "name": "Government Verification",
+          "cost": 200000,
+          "description": "Direct verification of documents with relevant agencies"
+        },
+        {
+          "name": "Title Insurance",
+          "percentage": 1.5,
+          "description": "Insurance against title defects where available"
+        }
+      ],
+      "projectManagement": [
+        {
+          "name": "Professional Project Manager",
+          "percentage": 5,
+          "description": "Oversees construction or renovation process"
+        },
+        {
+          "name": "Remote Monitoring System",
+          "cost": 750000,
+          "description": "Security cameras and progress monitoring technology"
+        },
+        {
+          "name": "Quarterly Site Visits",
+          "cost": 1200000,
+          "description": "Regular personal inspection of property (annual cost)"
+        },
+        {
+          "name": "Independent Quality Inspector",
+          "cost": 300000,
+          "description": "Periodic construction quality verification"
+        }
+      ],
+      "financialProtection": [
+        {
+          "name": "Escrow Service",
+          "percentage": 1,
+          "description": "Third-party fund management for staged payments"
+        },
+        {
+          "name": "Property Insurance",
+          "percentage": 1.5,
+          "description": "Coverage for physical damage and liability"
+        },
+        {
+          "name": "Professional Property Management",
+          "percentage": 10,
+          "description": "Annual fee based on rental income"
+        },
+        {
+          "name": "Banking Fees",
+          "percentage": 0.5,
+          "description": "International transfer and currency conversion costs"
+        }
+      ]
+    }
+  }

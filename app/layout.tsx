@@ -27,7 +27,7 @@ export default function RootLayout({
 
 
   return (
-    <html lang="en" data-theme="cupcake" className="flex justify-center items-center min-h-screen" >
+    <html lang="en" data-theme="acid" className="flex justify-center items-center min-h-screen" >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

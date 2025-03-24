@@ -1,0 +1,236 @@
+{
+  "risks": [
+    {
+      "category": "legal",
+      "title": "Land Ownership and Title Issues",
+      "factors": [
+        {
+          "title": "Fragmented Land Administration",
+          "description": "Nigeria operates multiple land registration systems across different states, creating inconsistencies and confusion."
+        },
+        {
+          "title": "Land Use Act Complications",
+          "description": "The 1978 Land Use Act vests all land in state governments, meaning individuals can only obtain rights of occupancy rather than absolute ownership."
+        },
+        {
+          "title": "Certificate of Occupancy (C of O) Challenges",
+          "description": "Many properties lack proper C of O documentation, the primary evidence of legal right to land use."
+        },
+        {
+          "title": "Family Land Disputes",
+          "description": "Land often belongs to extended families, leading to multiple claimants challenging sales made by individual family members."
+        }
+      ]
+    },
+    {
+      "category": "legal",
+      "title": "Documentation Risks",
+      "factors": [
+        {
+          "title": "Fraudulent Titles",
+          "description": "Counterfeit land documents are common, particularly in high-demand areas."
+        },
+        {
+          "title": "Incomplete Documentation",
+          "description": "Many properties have missing or incomplete documentation chains."
+        },
+        {
+          "title": "Multiple Sales",
+          "description": "The same property may be sold to multiple buyers due to poor record-keeping."
+        },
+        {
+          "title": "Gazumping",
+          "description": "Sellers may back out of agreements after accepting initial payments to pursue higher offers."
+        }
+      ]
+    },
+    {
+      "category": "legal",
+      "title": "Legal Framework Weaknesses",
+      "factors": [
+        {
+          "title": "Slow Judicial Process",
+          "description": "Property litigation can last 5-15 years in Nigerian courts."
+        },
+        {
+          "title": "Inconsistent Enforcement",
+          "description": "Application of property laws varies widely between jurisdictions."
+        },
+        {
+          "title": "Zoning Violations",
+          "description": "Properties may be built in violation of zoning regulations, risking future demolition."
+        }
+      ]
+    },
+    {
+      "category": "financial",
+      "title": "Market Volatility",
+      "factors": [
+        {
+          "title": "Price Bubbles",
+          "description": "Urban centers like Lagos and Abuja experience periodic property bubbles."
+        },
+        {
+          "title": "Regional Disparities",
+          "description": "Property values can vary dramatically between and within cities."
+        },
+        {
+          "title": "Illiquid Assets",
+          "description": "Reselling property can be difficult, especially in economic downturns."
+        }
+      ]
+    },
+    {
+      "category": "financial",
+      "title": "Currency and Economic Factors",
+      "factors": [
+        {
+          "title": "Naira Fluctuations",
+          "description": "The Nigerian currency's volatility affects real property values."
+        },
+        {
+          "title": "Inflation Impact",
+          "description": "High inflation rates (averaging 15-18% in recent years) erode real property returns."
+        },
+        {
+          "title": "Remittance Challenges",
+          "description": "International money transfer restrictions and costs impact investment capabilities."
+        }
+      ]
+    },
+    {
+      "category": "financial",
+      "title": "Hidden Costs",
+      "factors": [
+        {
+          "title": "Registration Fees",
+          "description": "Property registration can cost 8-15% of the property value."
+        },
+        {
+          "title": "Development Levies",
+          "description": "Local government and community development charges are often undisclosed before purchase."
+        },
+        {
+          "title": "\"Settlement\" Payments",
+          "description": "Informal payments to community stakeholders may be expected."
+        },
+        {
+          "title": "Infrastructure Costs",
+          "description": "Buyers often must self-fund basic infrastructure like roads, water, and electricity."
+        }
+      ]
+    },
+    {
+      "category": "logistical",
+      "title": "Distance Management Challenges",
+      "factors": [
+        {
+          "title": "Property Supervision",
+          "description": "Difficulty in overseeing construction or maintenance from abroad."
+        },
+        {
+          "title": "Communication Barriers",
+          "description": "Time zone differences and unreliable communication infrastructure."
+        },
+        {
+          "title": "Dependency on Representatives",
+          "description": "Reliance on potentially untrustworthy proxies for decision-making."
+        }
+      ]
+    },
+    {
+      "category": "logistical",
+      "title": "Construction and Development Issues",
+      "factors": [
+        {
+          "title": "Build Quality Concerns",
+          "description": "Substandard materials and workmanship are common."
+        },
+        {
+          "title": "Project Delays",
+          "description": "Construction timelines frequently extend 2-3 times beyond estimates."
+        },
+        {
+          "title": "Contractor Reliability",
+          "description": "Abandonment of projects after receiving advance payments."
+        }
+      ]
+    },
+    {
+      "category": "logistical",
+      "title": "Infrastructure Deficits",
+      "factors": [
+        {
+          "title": "Power Supply",
+          "description": "Unreliable electricity necessitates expensive generator systems."
+        },
+        {
+          "title": "Water Access",
+          "description": "Many properties require private boreholes or water delivery systems."
+        },
+        {
+          "title": "Road Accessibility",
+          "description": "Properties may become inaccessible during rainy seasons due to poor roads."
+        },
+        {
+          "title": "Security Concerns",
+          "description": "Additional investments in security systems and personnel may be necessary."
+        }
+      ]
+    },
+    {
+      "category": "market",
+      "title": "Policy Instability",
+      "factors": [
+        {
+          "title": "Changing Regulations",
+          "description": "Frequent policy changes affect property rights and taxation."
+        },
+        {
+          "title": "Government Appropriation",
+          "description": "Risk of land reclamation for \"public purpose\" with inadequate compensation."
+        },
+        {
+          "title": "Political Influence",
+          "description": "Property rights enforcement often depends on political connections."
+        }
+      ]
+    },
+    {
+      "category": "market",
+      "title": "Market Information Asymmetry",
+      "factors": [
+        {
+          "title": "Opaque Pricing",
+          "description": "Lack of transparent pricing mechanisms creates valuation difficulties."
+        },
+        {
+          "title": "Limited Market Data",
+          "description": "Absence of reliable property indices or historical sales data."
+        },
+        {
+          "title": "Misinformation",
+          "description": "Deliberate misrepresentation of property potential by interested parties."
+        }
+      ]
+    },
+    {
+      "category": "market",
+      "title": "Regional Security Concerns",
+      "factors": [
+        {
+          "title": "Civil Unrest",
+          "description": "Communal conflicts can devalue property or render it unusable."
+        },
+        {
+          "title": "Terrorism Impact",
+          "description": "Northern regions face Boko Haram threats affecting property markets."
+        },
+        {
+          "title": "Urban Crime",
+          "description": "High-crime areas face property devaluation and rental challenges."
+        }
+      ]
+    }
+  ]
+}
