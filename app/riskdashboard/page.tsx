@@ -41,7 +41,7 @@ const RiskDashboard = () => {
   const regionRiskData = currentRegion.riskScores;
 
   return (
-    <div className="w-full space-y-6">
+    <div className="w-full space-y-6 ">
       <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-4 pr-6 pl-6 sm:pr-4 sm:pl-4">
         <div>
           <h2 className="text-3xl font-bold mb-2">Property Investment Risk Dashboard</h2>
@@ -68,7 +68,7 @@ const RiskDashboard = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6  p-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
         <Card className="md:col-span-2">
           <CardHeader>
             <CardTitle>Risk Overview: {currentRegion.name}</CardTitle>
