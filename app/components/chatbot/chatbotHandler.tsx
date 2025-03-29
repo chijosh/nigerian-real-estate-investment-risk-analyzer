@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Send, Bot, User, XCircle } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 interface Message {
     role: 'user' | 'assistant';
@@ -108,10 +109,10 @@ export default function BotHandler() {
                                     className={`p-2 rounded-lg ${
                                         message.role === 'user'
                                             ? 'bg-blue-500 text-white'
-                                            : 'bg-gray-200 text-black'
+                                            : 'bg-gray-200 text-black font-mono whitespace-pre-wrap p-3'
                                     }`}
                                 >
-                                    {message.content}
+                                    <ReactMarkdown>{message.content}</ReactMarkdown>
                                 </div>
                             </div>
                         ))}
