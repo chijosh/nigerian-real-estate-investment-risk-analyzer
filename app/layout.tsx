@@ -3,7 +3,7 @@ import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { metadata } from "./metadata";
-import BotHandler from "./components/chatbot/botHandler";
+import BotHandler from "./components/chatbot/chatbotHandler";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
