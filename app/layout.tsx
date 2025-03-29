@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { metadata } from "./metadata";
+import BotHandler from "./components/chatbot/botHandler";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <BotHandler />
         <Footer />
       </body>
     </html>
