@@ -1,132 +1,135 @@
 "use client";
 
-import React, { JSX, useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import {
-  Home,
-  PieChart,
-  BookOpen,
-  ShieldCheck,
-  DollarSign,
-  Menu,
-  Sun, 
-  Moon,
-} from "lucide-react";
 import { Button } from "./ui/button";
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Menu, Home, Clock, FileText, Shield, DollarSign, Moon, Sun } from "lucide-react";
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
-export const Navbar = () => {
-  const [theme, setTheme] = useState("acid");
+const navItems = [
+  { name: "Home", href: "/", icon: <Home className="w-4 h-4 mr-2" /> },
+  { name: "Risk Dashboard", href: "/dashboard/riskdashboard", icon: <Clock className="w-4 h-4 mr-2" /> },
+  { name: "Case Studies", href: "/dashboard/cases", icon: <FileText className="w-4 h-4 mr-2" /> },
+  { name: "Risk Mitigation", href: "/dashboard/strategies", icon: <Shield className="w-4 h-4 mr-2" /> },
+  { name: "Cost Estimator", href: "/dashboard/estimator", icon: <DollarSign className="w-4 h-4 mr-2" /> },
+];
 
-  const toggleTheme = () => {
-    setTheme(theme === "coffee" ? "acid" : "coffee");
-  };
+export default function Navbar() {
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const pathname = usePathname();
 
   useEffect(() => {
-    const htmlElement = document.querySelector("html");
-    if (htmlElement) {
-      htmlElement.setAttribute("data-theme", theme);
+    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.classList.toggle("dark", savedTheme === "dark");
     }
-  }, [theme]);
+  }, []);
 
-  const navItems: {
-    label: string;
-    icon: JSX.Element;
-    value: "landing" | "riskdashboard" | "cases" | "strategies" | "estimator";
-  }[] = [
-    {
-      label: "Home",
-      icon: <Home className="h-5 w-5 mr-2" />,
-      value: "landing",
-    },
-    {
-      label: "Risk Dashboard",
-      icon: <PieChart className="h-5 w-5 mr-2" />,
-      value: "riskdashboard",
-    },
-    {
-      label: "Case Studies",
-      icon: <BookOpen className="h-5 w-5 mr-2" />,
-      value: "cases",
-    },
-    {
-      label: "Risk Mitigation",
-      icon: <ShieldCheck className="h-5 w-5 mr-2" />,
-      value: "strategies",
-    },
-    {
-      label: "Cost Estimator",
-      icon: <DollarSign className="h-5 w-5 mr-2" />,
-      value: "estimator",
-    },
-  ];
-
-  const NavLink = ({ item }: { item: (typeof navItems)[0] }) => (
-    <Link
-      href={`
-    ${item.value === "landing" ? "/" : `/${item.value}`}
-    `}
-    >
-      <Button
-        variant="destructive"
-        className="flex items-center justify-start w-full md:w-auto"
-      >
-        {item.icon}
-        <span>{item.label}</span>
-      </Button>
-    </Link>
-  );
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+  };
 
   return (
-    <header className="sticky top-0 navbar bg-base-100 shadow-sm z-49">
+    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm border-b">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="font-bold text-xl">
-            NPI<span className=" text-blue-600">RA</span>
+          <Link href="/" className="flex items-center">
+            <span className="font-bold text-xl tracking-tight">
+              NPI<span className="text-npira-blue">RA</span>
+            </span>
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-4">
-          {navItems.map((item) => (
-            <NavLink key={item.value} item={item} />
-          ))}
-          <div className="flex items-center space-x-2">
-            <Button className="p-2 rounded-full border bg-gray-200 dark:bg-gray-800" variant="ghost" size="icon" onClick={() => toggleTheme()}>
-              <span className="sr-only">Toggle theme</span>
-              {theme === 'acid' ? <Sun className="h-6 w-6 text-yellow-500 fill-yellow-500" /> : <Moon className="h-6 w-6 text-gray-500 fill-gray-500" />}
-            </Button>
-          </div>
+        {/* Desktop navigation */}
+        <nav className="hidden md:flex items-center space-x-2">
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+
+            return (
+              <Link key={item.href} href={item.href}>
+                <Button
+                  variant={isActive ? "default" : "outline"}
+                  className={`relative transition-all duration-200 ${isActive ? 'bg-npira-red hover:bg-npira-red/90' : ''}`}
+                >
+                  {item.icon}
+                  <span>{item.name}</span>
+                  {isActive && (
+                    <motion.div
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-npira-red"
+                      layoutId="activeNavIndicator"
+                      transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                    />
+                  )}
+                </Button>
+              </Link>
+            );
+          })}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleTheme}
+            className="ml-2 rounded-full"
+          >
+            {theme === "light" ? (
+              <Moon className="h-5 w-5" />
+            ) : (
+              <Sun className="h-5 w-5" />
+            )}
+            <span className="sr-only">Toggle theme</span>
+          </Button>
         </nav>
 
-        {/* Mobile Navigation */}
-
+        {/* Mobile navigation */}
         <Sheet>
-          <SheetTrigger asChild className="flex md:hidden">
-            <Button variant="ghost" size="default">
+          <SheetTrigger asChild className="md:hidden">
+            <Button variant="ghost" size="icon" aria-label="Menu">
               <Menu className="h-6 w-6" />
-              <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-64">
-          <div className="block sm:visible md:hidden">
-          <div className="flex items-center space-x-2">
-            <Button variant="ghost" size="default" onClick={() => toggleTheme()}>
-              <span className="sr-only">Toggle theme</span>
-              <span className="h-4 w-4">🌓</span>
-            </Button>
-          </div>
-          </div>
-            <SheetTitle>
-              <div className="flex flex-col space-y-4 mt-8">
-                {navItems.map((item) => (
-                  <NavLink key={item.value} item={item} />
-                ))}
-              </div>
-            </SheetTitle>
+          <SheetContent side="right" className="w-[300px] sm:w-[350px]">
+            <nav className="flex flex-col gap-4 mt-8">
+              {navItems.map((item) => {
+                const isActive = pathname === item.href;
+
+                return (
+                  <Link key={item.href} href={item.href}>
+                    <Button
+                      variant={isActive ? "default" : "ghost"}
+                      className={`w-full justify-start ${isActive ? 'bg-npira-red hover:bg-npira-red/90' : ''}`}
+                    >
+                      {item.icon}
+                      <span>{item.name}</span>
+                    </Button>
+                  </Link>
+                );
+              })}
+              <Button
+                variant="ghost"
+                className="justify-start"
+                onClick={toggleTheme}
+              >
+                {theme === "light" ? (
+                  <>
+                    <Moon className="h-4 w-4 mr-2" />
+                    <span>Dark mode</span>
+                  </>
+                ) : (
+                  <>
+                    <Sun className="h-4 w-4 mr-2" />
+                    <span>Light mode</span>
+                  </>
+                )}
+              </Button>
+            </nav>
           </SheetContent>
         </Sheet>
       </div>
     </header>
   );
-};
+}
